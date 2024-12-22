@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+  Changes:
+    - Thumbnail
+
+---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+  Major Features:
+    - Added new Space Garden, capable of Astroponics with Liquid fertilizer to grow wood in space
