@@ -1,11 +1,12 @@
+local ftech = 
+
 data:extend({
   {
     type = "technology",
     name = "astroponics",
     icon = "__Krastorio2Assets__/technologies/greenhouse.png",
     icon_size = 256,
-    effects =
-    {
+    effects = {
       {type="unlock-recipe", recipe="space-garden"},
       {type="unlock-recipe", recipe="liquid-fertilizer"},
       {type="unlock-recipe", recipe="bioslurry-recycling"},
@@ -24,3 +25,35 @@ data:extend({
     }
   }
 })
+
+if settings.startup["astroponics-gleba-crops"].value then
+  data:extend({
+    {
+      type = "technology",
+      name = "gleba-astroponics",
+      icons = {
+        {icon="__Krastorio2Assets__/technologies/greenhouse.png", icon_size=256},
+        {icon="__space-age__/graphics/technology/yumako.png", icon_size=256, shift={-64, -64}, scale=0.4},
+        {icon="__space-age__/graphics/technology/jellynut.png", icon_size=256, shift={64, -64}, scale=0.4}
+      },
+      effects = {
+        {type="unlock-recipe", recipe="yumako-astroponics"},
+        {type="unlock-recipe", recipe="jellynut-astroponics"}
+      },
+      prerequisites = {"advanced-asteroid-processing"},
+      unit = {
+        count = 2000,
+        ingredients = {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"production-science-pack", 1},
+          {"utility-science-pack", 1},
+          {"space-science-pack", 1},
+          {"agricultural-science-pack", 1},
+        },
+        time = 60
+      }
+    }
+  })
+end

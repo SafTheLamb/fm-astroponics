@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Major Features:
+    - Add growing gleba crops in space
+    - Add recipe to turn excess bioslurry into crude oil
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.1
   Changes:
     - Thumbnail
