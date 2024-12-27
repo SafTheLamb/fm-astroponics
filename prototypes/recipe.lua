@@ -59,6 +59,10 @@ data:extend({
     type = "recipe",
     name = "tree-astroponics",
     localised_name = {"recipe-name.tree-astroponics"},
+    icons = {
+      {icon="__base__/graphics/icons/wood.png"},
+      {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+    },
     category = "astroponics",
     subgroup = "astroponics",
     order = "b[agriculture]-a[wood]",
@@ -84,6 +88,10 @@ if settings.startup["astroponics-gleba-crops"].value then
       type = "recipe",
       name = "yumako-astroponics",
       localised_name = {"recipe-name.yumako-astroponics"},
+      icons = {
+        {icon="__space-age__/graphics/icons/yumako.png"},
+        {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+      },
       category = "astroponics",
       subgroup = "astroponics",
       order = "d[xeno]-b[yumako]",
@@ -106,6 +114,10 @@ if settings.startup["astroponics-gleba-crops"].value then
       type = "recipe",
       name = "jellynut-astroponics",
       localised_name = {"recipe-name.jellynut-astroponics"},
+      icons = {
+        {icon="__space-age__/graphics/icons/jellynut.png"},
+        {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+      },
       category = "astroponics",
       subgroup = "astroponics",
       order = "d[xeno]-c[jellynut]",

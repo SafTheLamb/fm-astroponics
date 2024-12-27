@@ -13,7 +13,7 @@ data:extend({
     -- dying_explosion = "lab-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    surface_conditions = {{property="gravity", min=0, max=0}},
+    surface_conditions = {{property="gravity", max=1}},
     crafting_categories = {"astroponics"},
     energy_source = {
       type = "electric",

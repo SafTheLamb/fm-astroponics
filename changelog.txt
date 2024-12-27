@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Changes:
+    - Change gravity surface condition for Space garden to be max 1 m/s2, so that it can be built on Cerys
+    - Update astroponics recipe icons
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Major Features:
     - Add growing gleba crops in space
