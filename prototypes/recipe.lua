@@ -28,7 +28,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type="fluid", name="sulfuric-acid", amount=10},
-      {type="item", name="carbon", amount=1},
+      {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
       {type="fluid", name="water", amount=10}
     },
     results = {

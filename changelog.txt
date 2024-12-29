@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+  Changes:
+    - Change Liquid fertilizer recipe to use Charcoal instead of Carbon
+    - Add Liquid fertilizer to recipes for Overgrowth yumako soil and Overgrowth jellynut soil
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Changes:
     - Change gravity surface condition for Space garden to be max 1 m/s2, so that it can be built on Cerys

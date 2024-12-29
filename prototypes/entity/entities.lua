@@ -15,6 +15,7 @@ data:extend({
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     surface_conditions = {{property="gravity", max=1}},
     crafting_categories = {"astroponics"},
+    crafting_speed = 1,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
@@ -102,7 +103,6 @@ data:extend({
     },
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
-    close_sound = sounds.machine_close,
-    crafting_speed = 1
+    close_sound = sounds.machine_close
   }
 })
