@@ -28,7 +28,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type="fluid", name="sulfuric-acid", amount=20},
-      {type="item", name="charcoal", amount=1},
+      {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
       {type="fluid", name=mods["bztin"] and "organotins" or "water", amount=10}
     },
     results = {
@@ -48,7 +48,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type="fluid", name="bioslurry", amount=10, ignored_by_stats=10},
-      {type="item", name="charcoal", amount=1},
+      {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
       {type="fluid", name="water", amount=10}
     },
     results = {

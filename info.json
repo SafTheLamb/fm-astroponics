@@ -3,7 +3,7 @@
   "title": "Astroponics",
   "description": "Adds a garden for you to grow wood in space!",
   "author": "SafTheLamb",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "factorio_version": "2.0",
   "homepage": "https://github.com/SafTheLamb/fm-astroponics",
   "dependencies": [
@@ -13,6 +13,7 @@
     "wood-universe-assets >= 1.1.2",
     "Krastorio2Assets",
     "? bztin",
+    "? wood-industry",
     "(?) Cerys-Moon-of-Fulgora",
     "! biochemistry"
   ],

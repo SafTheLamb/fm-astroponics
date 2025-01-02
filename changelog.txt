@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+  Bugfixes:
+    - Fix error when Wooden Industry isn't installed
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
   Major Features:
     - Add Organotins from BZ Tin to Liquid fertilizer
