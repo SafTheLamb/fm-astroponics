@@ -11,7 +11,7 @@ data:extend({
       mods["aai-industry"] and {type="item", name="glass", amount=100} or {type="item", name="concrete", amount=10},
       {type="item", name="processing-unit", amount=5},
       {type="item", name="pipe", amount=10},
-      {type="item", name="landfill", amount=1}
+      {type="item", name="landfill", amount=10}
     },
     results = {{type="item", name="space-garden", amount=1}}
   },
@@ -27,9 +27,9 @@ data:extend({
     auto_recycle = false,
     allow_productivity = true,
     ingredients = {
-      {type="fluid", name="sulfuric-acid", amount=10},
-      {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
-      {type="fluid", name="water", amount=10}
+      {type="fluid", name="sulfuric-acid", amount=20},
+      {type="item", name="charcoal", amount=1},
+      {type="fluid", name=mods["bztin"] and "organotins" or "water", amount=10}
     },
     results = {
       {type="fluid", name="liquid-fertilizer", amount=20}
@@ -48,7 +48,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type="fluid", name="bioslurry", amount=10, ignored_by_stats=10},
-      {type="item", name="carbon", amount=1},
+      {type="item", name="charcoal", amount=1},
       {type="fluid", name="water", amount=10}
     },
     results = {
@@ -94,7 +94,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       },
       category = "astroponics",
       subgroup = "astroponics",
-      order = "d[xeno]-b[yumako]",
+      order = "d[xeno]-a[yumako]",
       energy_required = 18,
       enabled = false,
       auto_recycle = false,
@@ -106,7 +106,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       },
       results = {
         {type="item", name="yumako", amount=20},
-        {type="fluid", name="bioslurry", amount=50, ignored_by_stats=50}
+        {type="fluid", name="bioslurry", amount=40, ignored_by_stats=40}
       },
       main_product = "yumako"
     },
@@ -120,7 +120,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       },
       category = "astroponics",
       subgroup = "astroponics",
-      order = "d[xeno]-c[jellynut]",
+      order = "d[xeno]-b[jellynut]",
       energy_required = 18,
       enabled = false,
       auto_recycle = false,
@@ -132,7 +132,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       },
       results = {
         {type="item", name="jellynut", amount=20},
-        {type="fluid", name="bioslurry", amount=50, ignored_by_stats=50}
+        {type="fluid", name="bioslurry", amount=40, ignored_by_stats=40}
       },
       main_product = "jellynut"
     }

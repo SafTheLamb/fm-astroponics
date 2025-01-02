@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+  Major Features:
+    - Add Organotins from BZ Tin to Liquid fertilizer
+  Changes:
+    - Add separate technology for Bioslurry putrefaction
+    - Revert Liquid fertilizer to use Carbon again
+    - Adjust recipe for Space garden
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
   Changes:
     - Change Liquid fertilizer recipe to use Charcoal instead of Carbon

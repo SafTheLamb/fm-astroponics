@@ -1,5 +1,3 @@
-local ftech = 
-
 data:extend({
   {
     type = "technology",
@@ -33,8 +31,8 @@ if settings.startup["astroponics-gleba-crops"].value then
       name = "gleba-astroponics",
       icons = {
         {icon="__Krastorio2Assets__/technologies/greenhouse.png", icon_size=256},
-        {icon="__space-age__/graphics/technology/yumako.png", icon_size=256, shift={-64, -64}, scale=0.4},
-        {icon="__space-age__/graphics/technology/jellynut.png", icon_size=256, shift={64, -64}, scale=0.4}
+        {icon="__space-age__/graphics/technology/yumako.png", icon_size=256, shift={-32, -32}, scale=0.3},
+        {icon="__space-age__/graphics/technology/jellynut.png", icon_size=256, shift={32, -32}, scale=0.3}
       },
       effects = {
         {type="unlock-recipe", recipe="yumako-astroponics"},
@@ -53,6 +51,32 @@ if settings.startup["astroponics-gleba-crops"].value then
           {"agricultural-science-pack", 1},
         },
         time = 60
+      }
+    }
+  })
+end
+
+if settings.startup["astroponics-crude-oil"].value then
+  data:extend({
+    {
+      type = "technology",
+      name = "bioslurry-putrefaction",
+      icon = "__wood-universe-assets__/graphics/technology/bioslurry-putrefaction.png",
+      icon_size = 256,
+      effects = {{type="unlock-recipe", recipe="bioslurry-putrefaction"}},
+      prerequisites = {"advanced-asteroid-processing"},
+      unit = {
+        count = 500,
+        ingredients = {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"production-science-pack", 1},
+          {"utility-science-pack", 1},
+          {"space-science-pack", 1},
+          {"agricultural-science-pack", 1},
+        },
+        time = 30
       }
     }
   })
