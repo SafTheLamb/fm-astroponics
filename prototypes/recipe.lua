@@ -70,6 +70,7 @@ data:extend({
     enabled = false,
     auto_recycle = false,
     allow_productivity = true,
+    allow_decomposition = false,
     ingredients = {
       {type="fluid", name="liquid-fertilizer", amount=50, ignored_by_stats=50},
       {type="item", name="tree-seed", amount=1}

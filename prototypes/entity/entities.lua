@@ -1,6 +1,43 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
+local function assemblerpipepicturesfrozen()
+  return {
+    north = {
+      filename = "__space-age__/graphics/entity/frozen/assembling-machine/assembling-machine-pipe-N-frozen.png",
+      priority = "extra-high",
+      width = 71,
+      height = 38,
+      shift = util.by_pixel(2.25, 13.5),
+      scale = 0.5
+    },
+    east = {
+      filename = "__space-age__/graphics/entity/frozen/assembling-machine/assembling-machine-pipe-E-frozen.png",
+      priority = "extra-high",
+      width = 42,
+      height = 76,
+      shift = util.by_pixel(-24.5, 1),
+      scale = 0.5
+    },
+    south = {
+      filename = "__space-age__/graphics/entity/frozen/assembling-machine/assembling-machine-pipe-S-frozen.png",
+      priority = "extra-high",
+      width = 88,
+      height = 61,
+      shift = util.by_pixel(0, -31.25),
+      scale = 0.5
+    },
+    west = {
+      filename = "__space-age__/graphics/entity/frozen/assembling-machine/assembling-machine-pipe-W-frozen.png",
+      priority = "extra-high",
+      width = 39,
+      height = 73,
+      shift = util.by_pixel(25.75, 1.25),
+      scale = 0.5
+    }
+  }
+end
+
 data:extend({
   {
     type = "assembling-machine",
@@ -13,7 +50,7 @@ data:extend({
     -- dying_explosion = "lab-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    surface_conditions = {{property="gravity", max=1}},
+    surface_conditions = {{property="pressure", min=0, max=0}},
     crafting_categories = {"astroponics"},
     crafting_speed = 1,
     energy_source = {
@@ -22,10 +59,12 @@ data:extend({
       drain = "1kW",
     },
     energy_usage = "450kW",
+    heating_energy = "200kW",
     fluid_boxes = {
       {
         production_type = "input",
         pipe_picture = assembler3pipepictures(),
+        pipe_picture_frozen = assemblerpipepicturesfrozen(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction=defines.direction.north, position={0, -3}}}
@@ -33,6 +72,7 @@ data:extend({
       {
         production_type = "output",
         pipe_picture = assembler3pipepictures(),
+        pipe_picture_frozen = assemblerpipepicturesfrozen(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {{flow_direction="output", direction=defines.direction.south, position={0, 3}}}
@@ -90,6 +130,12 @@ data:extend({
             animation_speed = 0.35,
           }
         }
+      },
+      frozen_patch = {
+        filename = "__wood-universe-assets__/graphics/entity/space-garden/space-garden-frozen.png",
+        width = 194,
+        height = 174,
+        scale = 13/12
       },
     },
     working_sound = {

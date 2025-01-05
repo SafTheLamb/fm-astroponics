@@ -8,7 +8,8 @@ data:extend({
       {type="unlock-recipe", recipe="space-garden"},
       {type="unlock-recipe", recipe="liquid-fertilizer"},
       {type="unlock-recipe", recipe="bioslurry-recycling"},
-      {type="unlock-recipe", recipe="tree-astroponics"}
+      {type="unlock-recipe", recipe="tree-astroponics"},
+      {type="unlock-recipe", recipe="ice-melting"}
     },
     prerequisites = {"landfill", "space-science-pack"},
     unit = {

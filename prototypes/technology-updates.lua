@@ -1,6 +1,7 @@
 local ftech = require("__fdsl__.lib.technology")
 
-ftech.add_unlock("space-platform-thruster", "astroponics")
+ftech.add_prereq("space-platform-thruster", "astroponics")
+ftech.remove_unlock("space-platform-thruster", "ice-melting")
 
 if not mods["early-agriculture"] then
   ftech.add_unlock("astroponics", "wood-processing")

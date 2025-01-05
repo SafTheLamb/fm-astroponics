@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+  Major Features:
+    - Add Cerys compatibility... via a separate mod!
+  Changes:
+    - Move Ice melting unlock from Space platform thruster to Astroponics
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Bugfixes:
     - Fix error when Wooden Industry isn't installed

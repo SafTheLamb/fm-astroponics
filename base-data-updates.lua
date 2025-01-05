@@ -12,4 +12,3 @@ end
 if mods["bztin"] then
   frep.add_ingredient("space-garden", {type="item", name="solder", amount=10})
 end
-
