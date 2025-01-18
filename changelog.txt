@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+  Changes:
+    - Update remnants for Space Garden to use big Biochamber remnants
+  Bugfixes:
+    - Update asset version required for K2Assets
+
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
   Major Features:
     - Add Cerys compatibility... via a separate mod!
