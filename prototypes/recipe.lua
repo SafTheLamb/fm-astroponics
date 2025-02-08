@@ -28,7 +28,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type="fluid", name="sulfuric-acid", amount=20},
-      {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
+      {type="item", name="carbon", amount=1},
       {type="fluid", name=mods["bztin"] and "organotins" or "water", amount=10}
     },
     results = {
@@ -45,14 +45,14 @@ data:extend({
     energy_required = 2,
     enabled = false,
     auto_recycle = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type="fluid", name="bioslurry", amount=10, ignored_by_stats=10},
       {type="item", name=mods["wood-industry"] and "charcoal" or "carbon", amount=1},
       {type="fluid", name="water", amount=10}
     },
     results = {
-      {type="fluid", name="liquid-fertilizer", amount=20, ignored_by_stats=20}
+      {type="fluid", name="liquid-fertilizer", amount=20, ignored_by_stats=20, ignored_by_productivity=20}
     }
   },
   {
@@ -80,7 +80,28 @@ data:extend({
       {type="fluid", name="bioslurry", amount=25, ignored_by_stats=25}
     },
     main_product = "wood"
-  }
+  },
+  {
+    type = "recipe",
+    name = "ammoniacal-liquid-fertilizer",
+    icon = "__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer-ammoniacal.png",
+    category = "cryogenics",
+    subgroup = "fluid-recipes",
+    order = "e[astroponics]-b[ammonic-fertilizer]",
+    energy_required = 2,
+    enabled = false,
+    auto_recycle = false,
+    allow_productivity = true,
+    ingredients = {
+      {type="fluid", name="ammonia", amount=10},
+      {type="fluid", name="petroleum-gas", amount=10},
+      {type="item", name="spoilage", amount=1},
+      {type="fluid", name="water", amount=40}
+    },
+    results = {
+      {type="fluid", name="liquid-fertilizer", amount=50}
+    }
+  },
 })
 
 if settings.startup["astroponics-gleba-crops"].value then

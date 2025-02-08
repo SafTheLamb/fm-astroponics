@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+  Major Features:
+    - Add Muluna compatibility: you can now place Space gardens on Muluna
+  Minor Features:
+    - Add recipe for making liquid fertilizer from ammonia
+  Changes:
+    - Chemical liquid fertilizer requires carbon instead of charcoal, to make it more 
+    - Disabled productivity for bioslurry recycling
+  Modding:
+    - Technology changes moved from technology-updates.lua into base-data-updates.lua
+
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
   Changes:
     - Update remnants for Space Garden to use big Biochamber remnants

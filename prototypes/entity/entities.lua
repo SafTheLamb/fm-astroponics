@@ -50,7 +50,10 @@ data:extend({
     -- dying_explosion = "lab-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    surface_conditions = {{property="pressure", min=0, max=0}},
+    surface_conditions = mods["planet-muluna"] and {
+      {property="pressure", min=0, max=100},
+      {property="magnetic-field", min=0, max=1}, -- muluna but not cerys (lunaponics is totally different)
+    } or {{property="pressure", min=0, max=0}},
     crafting_categories = {"astroponics"},
     crafting_speed = 1,
     energy_source = {
