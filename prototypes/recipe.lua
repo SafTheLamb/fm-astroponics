@@ -18,6 +18,7 @@ data:extend({
   {
     type = "recipe",
     name = "liquid-fertilizer",
+    localised_name = {"recipe-name.liquid-fertilizer-chemical"},
     icon = "__wood-universe-assets__/graphics/icons/fluid/chemical-liquid-fertilizer.png",
     category = "chemistry-or-cryogenics",
     subgroup = "fluid-recipes",
