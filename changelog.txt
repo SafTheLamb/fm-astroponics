@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+  Compatibility:
+    - Add compatibility for Bioprocessing Group
+  Bugfixes:
+    - Change internal name of ammoniacal-liquid-fertilizer to liquid-fertilizer-ammoniacal
+
+---------------------------------------------------------------------------------------------------
 Version: 1.3.2
   Bugfixes:
     - Fix load order issue with Wooden Industry technology prerequisites

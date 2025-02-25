@@ -34,4 +34,4 @@ if mods["wood-industry"] then
   ftech.add_prereq("astroponics", "wood-pyrolysis-2")
 end
 
-ftech.add_unlock("cryogenic-plant", "ammoniacal-liquid-fertilizer")
+ftech.add_unlock("cryogenic-plant", "liquid-fertilizer-ammoniacal")

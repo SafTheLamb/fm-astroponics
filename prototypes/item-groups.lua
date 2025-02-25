@@ -6,3 +6,13 @@ data:extend({
     order = "e"
   }
 })
+if mods["bioprocessing-tab"] then
+  data:extend({
+    {
+      type = "item-subgroup",
+      name = "astroponic-processes",
+      group = "bioprocessing",
+      order = "e"
+    }
+  })
+end

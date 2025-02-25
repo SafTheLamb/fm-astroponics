@@ -1,4 +1,5 @@
 local wood_amount = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value and 10 or 4
+local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
 
 data:extend({
   {
@@ -21,7 +22,7 @@ data:extend({
     localised_name = {"recipe-name.liquid-fertilizer-chemical"},
     icon = "__wood-universe-assets__/graphics/icons/fluid/chemical-liquid-fertilizer.png",
     category = "chemistry-or-cryogenics",
-    subgroup = "fluid-recipes",
+    subgroup = subgroup,
     order = "e[astroponics]-a[chemical]",
     energy_required = 2,
     enabled = false,
@@ -41,7 +42,7 @@ data:extend({
     name = "bioslurry-recycling",
     icon = "__wood-universe-assets__/graphics/icons/fluid/bioslurry-recycling.png",
     category = "chemistry-or-cryogenics",
-    subgroup = "fluid-recipes",
+    subgroup = subgroup,
     order = "e[astroponics]-b[recycling]",
     energy_required = 2,
     enabled = false,
@@ -65,7 +66,7 @@ data:extend({
       {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
     },
     category = "astroponics",
-    subgroup = "astroponics",
+    subgroup = subgroup,
     order = "b[agriculture]-a[wood]",
     energy_required = 12,
     enabled = false,
@@ -84,10 +85,10 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "ammoniacal-liquid-fertilizer",
+    name = "liquid-fertilizer-ammoniacal",
     icon = "__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer-ammoniacal.png",
     category = "cryogenics",
-    subgroup = "fluid-recipes",
+    subgroup = subgroup,
     order = "e[astroponics]-b[ammonic-fertilizer]",
     energy_required = 2,
     enabled = false,
@@ -116,7 +117,7 @@ if settings.startup["astroponics-gleba-crops"].value then
         {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
-      subgroup = "astroponics",
+      subgroup = subgroup,
       order = "d[xeno]-a[yumako]",
       energy_required = 18,
       enabled = false,
@@ -142,7 +143,7 @@ if settings.startup["astroponics-gleba-crops"].value then
         {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
-      subgroup = "astroponics",
+      subgroup = subgroup,
       order = "d[xeno]-b[jellynut]",
       energy_required = 18,
       enabled = false,
@@ -170,7 +171,7 @@ if settings.startup["astroponics-crude-oil"].value then
       localised_name = {"recipe-name.bioslurry-putrefaction"},
       icon = "__wood-universe-assets__/graphics/icons/fluid/bioslurry-putrefaction.png",
       category = "chemistry-or-cryogenics",
-      subgroup = "fluid-recipes",
+      subgroup = subgroup,
       order = "e[astroponics]-c[putrefaction]",
       energy_required = 5,
       emissions_multiplier = 10,
