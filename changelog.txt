@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+  Changes:
+    - Change Liquid fertilizer to only be craftable in space (or Muluna). Cerysian lunaponics is again, totally super different
+    - Move Liquid fertilizer (ammoniacal) to Cerysian Lunaponics, since it's 100% different now, and always was
+
+---------------------------------------------------------------------------------------------------
 Version: 1.3.3
   Compatibility:
     - Add compatibility for Bioprocessing Group
@@ -23,7 +29,7 @@ Version: 1.3.0
   Minor Features:
     - Add recipe for making liquid fertilizer from ammonia
   Changes:
-    - Chemical liquid fertilizer requires carbon instead of charcoal, to make it more 
+    - Chemical liquid fertilizer requires carbon instead of charcoal
     - Disabled productivity for bioslurry recycling
   Modding:
     - Technology changes moved from technology-updates.lua into base-data-updates.lua

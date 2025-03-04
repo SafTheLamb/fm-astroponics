@@ -1,6 +1,14 @@
 local wood_amount = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value and 10 or 4
 local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
 
+local surface_conditions = {{property="pressure", min=0, max=0}}
+if mods["planet-muluna"] then
+  surface_conditions = {
+    {property="pressure", min=0, max=100},
+    {property="magnetic-field", min=0, max=1}, -- muluna but not cerys (lunaponics is totally different)
+  }
+end
+
 data:extend({
   {
     type = "recipe",
@@ -24,6 +32,7 @@ data:extend({
     category = "chemistry-or-cryogenics",
     subgroup = subgroup,
     order = "e[astroponics]-a[chemical]",
+    surface_conditions = surface_conditions,
     energy_required = 2,
     enabled = false,
     auto_recycle = false,
@@ -44,6 +53,7 @@ data:extend({
     category = "chemistry-or-cryogenics",
     subgroup = subgroup,
     order = "e[astroponics]-b[recycling]",
+    surface_conditions = surface_conditions,
     energy_required = 2,
     enabled = false,
     auto_recycle = false,
@@ -82,28 +92,7 @@ data:extend({
       {type="fluid", name="bioslurry", amount=25, ignored_by_stats=25}
     },
     main_product = "wood"
-  },
-  {
-    type = "recipe",
-    name = "liquid-fertilizer-ammoniacal",
-    icon = "__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer-ammoniacal.png",
-    category = "cryogenics",
-    subgroup = subgroup,
-    order = "e[astroponics]-b[ammonic-fertilizer]",
-    energy_required = 2,
-    enabled = false,
-    auto_recycle = false,
-    allow_productivity = true,
-    ingredients = {
-      {type="fluid", name="ammonia", amount=10},
-      {type="fluid", name="petroleum-gas", amount=10},
-      {type="item", name="spoilage", amount=1},
-      {type="fluid", name="water", amount=40}
-    },
-    results = {
-      {type="fluid", name="liquid-fertilizer", amount=50}
-    }
-  },
+  }
 })
 
 if settings.startup["astroponics-gleba-crops"].value then
