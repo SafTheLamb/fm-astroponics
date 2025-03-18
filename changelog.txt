@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+  Compatibility:
+    - Update compatibility for Wooden Industry, changing dependent technology to Kiln Smelting from Alloy Smelting
+
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
   Changes:
     - Change Liquid fertilizer to only be craftable in space (or Muluna). Cerysian lunaponics is again, totally super different

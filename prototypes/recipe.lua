@@ -1,4 +1,5 @@
 local wood_amount = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value and 10 or 4
+local glass_item = (mods["aai-industry"] or (mods["crushing-industry"] and settings.startup["crushing-industry-glass"].value)) and "glass" or nil
 local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
 
 local surface_conditions = {{property="pressure", min=0, max=0}}
@@ -17,7 +18,7 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type="item", name="low-density-structure", amount=20},
-      mods["aai-industry"] and {type="item", name="glass", amount=100} or {type="item", name="concrete", amount=10},
+      glass_item and {type="item", name=glass_item, amount=100} or {type="item", name="concrete", amount=10},
       {type="item", name="processing-unit", amount=5},
       {type="item", name="pipe", amount=10},
       {type="item", name="landfill", amount=10}

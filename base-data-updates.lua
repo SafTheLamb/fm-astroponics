@@ -31,5 +31,5 @@ if not mods["early-agriculture"] then
 end
 
 if mods["wood-industry"] then
-  ftech.add_prereq("astroponics", "wood-pyrolysis-2")
+  ftech.add_prereq("astroponics", "kiln-smelting-2")
 end
