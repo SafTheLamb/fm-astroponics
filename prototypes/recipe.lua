@@ -33,7 +33,7 @@ data:extend({
     category = "chemistry-or-cryogenics",
     subgroup = subgroup,
     order = "e[astroponics]-a[chemical]",
-    surface_conditions = surface_conditions,
+    surface_conditions = not mods["Space-Age-Without-Platforms"] and surface_conditions or nil,
     energy_required = 2,
     enabled = false,
     auto_recycle = false,

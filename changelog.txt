@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+  Compatibility:
+    - When No Space Platforms is installed, Liquid fertilizer can be crafted anywhere
+
+---------------------------------------------------------------------------------------------------
 Version: 1.5.0
   Compatibility:
     - Update compatibility for Wooden Industry, changing dependent technology to Kiln Smelting from Alloy Smelting
