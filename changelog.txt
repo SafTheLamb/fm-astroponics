@@ -1,37 +1,38 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2025-04-11
+  Changes:
+    - Include assets from Krastorio 2 Assets directly into the mod and remove dependencies on asset mods
+  Major Features:
+    - Add compatibility for Voidcrafting Liquid fertilizer
+---------------------------------------------------------------------------------------------------
 Version: 1.5.1
   Compatibility:
     - When No Space Platforms is installed, Liquid fertilizer can be crafted anywhere
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.0
   Compatibility:
     - Update compatibility for Wooden Industry, changing dependent technology to Kiln Smelting from Alloy Smelting
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.0
   Changes:
     - Change Liquid fertilizer to only be craftable in space (or Muluna). Cerysian lunaponics is again, totally super different
     - Move Liquid fertilizer (ammoniacal) to Cerysian Lunaponics, since it's 100% different now, and always was
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.3
   Compatibility:
     - Add compatibility for Bioprocessing Group
   Bugfixes:
     - Change internal name of ammoniacal-liquid-fertilizer to liquid-fertilizer-ammoniacal
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.2
   Bugfixes:
     - Fix load order issue with Wooden Industry technology prerequisites
     - Add locale for Liquid fertilizer from ammonia
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.1
   Bugfixes:
     - Update asset dependency version
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
   Major Features:
@@ -43,26 +44,22 @@ Version: 1.3.0
     - Disabled productivity for bioslurry recycling
   Modding:
     - Technology changes moved from technology-updates.lua into base-data-updates.lua
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
   Changes:
     - Update remnants for Space Garden to use big Biochamber remnants
   Bugfixes:
     - Update asset version required for K2Assets
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
   Major Features:
     - Add Cerys compatibility... via a separate mod!
   Changes:
     - Move Ice melting unlock from Space platform thruster to Astroponics
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Bugfixes:
     - Fix error when Wooden Industry isn't installed
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
   Major Features:
@@ -71,30 +68,25 @@ Version: 1.1.0
     - Add separate technology for Bioslurry putrefaction
     - Revert Liquid fertilizer to use Carbon again
     - Adjust recipe for Space garden
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
   Changes:
     - Change Liquid fertilizer recipe to use Charcoal instead of Carbon
     - Add Liquid fertilizer to recipes for Overgrowth yumako soil and Overgrowth jellynut soil
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Changes:
     - Change gravity surface condition for Space garden to be max 1 m/s2, so that it can be built on Cerys
     - Update astroponics recipe icons
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Major Features:
     - Add growing gleba crops in space
     - Add recipe to turn excess bioslurry into crude oil
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.1
   Changes:
     - Thumbnail
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.0
   Major Features:

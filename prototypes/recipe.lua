@@ -2,14 +2,6 @@ local wood_amount = mods["early-agriculture"] and settings.startup["early-agricu
 local glass_item = (mods["aai-industry"] or (mods["crushing-industry"] and settings.startup["crushing-industry-glass"].value)) and "glass" or nil
 local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
 
-local surface_conditions = {{property="pressure", min=0, max=0}}
-if mods["planet-muluna"] then
-  surface_conditions = {
-    {property="pressure", min=0, max=100},
-    {property="magnetic-field", min=0, max=1}, -- muluna but not cerys (lunaponics is totally different)
-  }
-end
-
 data:extend({
   {
     type = "recipe",
@@ -29,11 +21,11 @@ data:extend({
     type = "recipe",
     name = "liquid-fertilizer",
     localised_name = {"recipe-name.liquid-fertilizer-chemical"},
-    icon = "__wood-universe-assets__/graphics/icons/fluid/chemical-liquid-fertilizer.png",
+    icon = "__astroponics__/graphics/icons/fluid/chemical-liquid-fertilizer.png",
     category = "chemistry-or-cryogenics",
     subgroup = subgroup,
     order = "e[astroponics]-a[chemical]",
-    surface_conditions = not mods["Space-Age-Without-Platforms"] and surface_conditions or nil,
+    surface_conditions = not mods["Space-Age-Without-Platforms"] and {{property="magnetic-field", min=0, max=5}} or nil,
     energy_required = 2,
     enabled = false,
     auto_recycle = false,
@@ -50,11 +42,11 @@ data:extend({
   {
     type = "recipe",
     name = "bioslurry-recycling",
-    icon = "__wood-universe-assets__/graphics/icons/fluid/bioslurry-recycling.png",
+    icon = "__astroponics__/graphics/icons/fluid/bioslurry-recycling.png",
     category = "chemistry-or-cryogenics",
     subgroup = subgroup,
     order = "e[astroponics]-b[recycling]",
-    surface_conditions = surface_conditions,
+    surface_conditions = {{property="magnetic-field", min=0, max=5}},
     energy_required = 2,
     enabled = false,
     auto_recycle = false,
@@ -74,7 +66,7 @@ data:extend({
     localised_name = {"recipe-name.tree-astroponics"},
     icons = {
       {icon="__base__/graphics/icons/wood.png"},
-      {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+      {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
     },
     category = "astroponics",
     subgroup = subgroup,
@@ -104,7 +96,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       localised_name = {"recipe-name.yumako-astroponics"},
       icons = {
         {icon="__space-age__/graphics/icons/yumako.png"},
-        {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+        {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
       subgroup = subgroup,
@@ -130,7 +122,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       localised_name = {"recipe-name.jellynut-astroponics"},
       icons = {
         {icon="__space-age__/graphics/icons/jellynut.png"},
-        {icon="__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+        {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
       subgroup = subgroup,
@@ -159,7 +151,7 @@ if settings.startup["astroponics-crude-oil"].value then
       type = "recipe",
       name = "bioslurry-putrefaction",
       localised_name = {"recipe-name.bioslurry-putrefaction"},
-      icon = "__wood-universe-assets__/graphics/icons/fluid/bioslurry-putrefaction.png",
+      icon = "__astroponics__/graphics/icons/fluid/bioslurry-putrefaction.png",
       category = "chemistry-or-cryogenics",
       subgroup = subgroup,
       order = "e[astroponics]-c[putrefaction]",

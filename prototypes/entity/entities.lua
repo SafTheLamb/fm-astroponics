@@ -47,7 +47,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "space-garden",
-    icon = "__Krastorio2Assets__/icons/entities/greenhouse.png",
+    icon = "__astroponics__/graphics/icons/space-garden.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "space-garden"},
     max_health = 450,
@@ -90,7 +90,7 @@ data:extend({
       animation = {
         layers = {
           {
-            filename = "__Krastorio2Assets__/buildings/greenhouse/greenhouse.png",
+            filename = "__astroponics__/graphics/entity/space-garden/space-garden.png",
             priority = "high",
             width = 512,
             height = 512,
@@ -98,7 +98,7 @@ data:extend({
             scale = 0.5,
           },
           {
-            filename = "__Krastorio2Assets__/buildings/greenhouse/greenhouse-sh.png",
+            filename = "__astroponics__/graphics/entity/space-garden/space-garden-shadow.png",
             priority = "high",
             width = 512,
             height = 512,
@@ -113,7 +113,19 @@ data:extend({
         {
           fadeout = true,
           animation = {
-            filename = "__Krastorio2Assets__/buildings/greenhouse/greenhouse-light.png",
+            filename = "__astroponics__/graphics/entity/space-garden/space-garden-working.png",
+            width = 512,
+            height = 512,
+            frame_count = 10,
+            line_length = 5,
+            scale = 0.5,
+            animation_speed = 0.35,
+          }
+        },
+        {
+          fadeout = true,
+          animation = {
+            filename = "__astroponics__/graphics/entity/space-garden/space-garden-light.png",
             draw_as_light = true,
             width = 512,
             height = 512,
@@ -122,22 +134,10 @@ data:extend({
             scale = 0.5,
             animation_speed = 0.35
           }
-        },
-        {
-          fadeout = true,
-          animation = {
-            filename = "__Krastorio2Assets__/buildings/greenhouse/greenhouse-working.png",
-            width = 512,
-            height = 512,
-            frame_count = 10,
-            line_length = 5,
-            scale = 0.5,
-            animation_speed = 0.35,
-          }
         }
       },
       frozen_patch = {
-        filename = "__wood-universe-assets__/graphics/entity/space-garden/space-garden-frozen.png",
+        filename = "__astroponics__/graphics/entity/space-garden/space-garden-frozen.png",
         width = 194,
         height = 174,
         scale = 13/12
@@ -145,7 +145,7 @@ data:extend({
     },
     working_sound = {
       sound = {
-        filename = "__wood-universe-assets__/sound/space-garden.ogg",
+        filename = "__astroponics__/sound/space-garden.ogg",
         volume = 0.3
       },
       audible_distance_modifier = 1,

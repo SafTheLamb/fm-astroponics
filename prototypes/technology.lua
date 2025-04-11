@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "astroponics",
-    icon = "__Krastorio2Assets__/technologies/greenhouse.png",
+    icon = "__astroponics__/graphics/technology/astroponics.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="space-garden"},
@@ -31,7 +31,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       type = "technology",
       name = "gleba-astroponics",
       icons = {
-        {icon="__Krastorio2Assets__/technologies/greenhouse.png", icon_size=256},
+        {icon="__astroponics__/graphics/technology/astroponics.png", icon_size=256},
         {icon="__space-age__/graphics/technology/yumako.png", icon_size=256, shift={-32, -32}, scale=0.3},
         {icon="__space-age__/graphics/technology/jellynut.png", icon_size=256, shift={32, -32}, scale=0.3}
       },
@@ -62,7 +62,7 @@ if settings.startup["astroponics-crude-oil"].value then
     {
       type = "technology",
       name = "bioslurry-putrefaction",
-      icon = "__wood-universe-assets__/graphics/technology/bioslurry-putrefaction.png",
+      icon = "__astroponics__/graphics/technology/bioslurry-putrefaction.png",
       icon_size = 256,
       effects = {{type="unlock-recipe", recipe="bioslurry-putrefaction"}},
       prerequisites = {"advanced-asteroid-processing"},

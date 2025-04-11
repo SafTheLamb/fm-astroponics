@@ -2,7 +2,7 @@ data:extend({
   {
     type = "corpse",
     name = "space-garden-remnants",
-    icon = "__Krastorio2Assets__/icons/entities/greenhouse.png",
+    icon = "__astroponics__/graphics/icons/space-garden.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,

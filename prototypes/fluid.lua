@@ -2,7 +2,7 @@ data:extend({
   {
     type = "fluid",
     name = "liquid-fertilizer",
-    icon = "__wood-universe-assets__/graphics/icons/fluid/liquid-fertilizer.png",
+    icon = "__astroponics__/graphics/icons/fluid/liquid-fertilizer.png",
     subgroup = "fluid",
     order = "c[astroponics]-a[liquid-fertilizer]",
     default_temperature = 25,
@@ -12,7 +12,7 @@ data:extend({
   {
     type = "fluid",
     name = "bioslurry",
-    icon = "__wood-universe-assets__/graphics/icons/fluid/bioslurry.png",
+    icon = "__astroponics__/graphics/icons/fluid/bioslurry.png",
     subgroup = "fluid",
     order = "c[astroponics]-b[bioslurry]",
     default_temperature = 25,

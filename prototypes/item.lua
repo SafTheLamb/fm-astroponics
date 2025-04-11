@@ -5,8 +5,7 @@ data:extend({
   {
     type = "item",
     name = "space-garden",
-    icon = "__Krastorio2Assets__/icons/entities/greenhouse.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon = "__astroponics__/graphics/icons/space-garden.png",
     subgroup = "space-platform",
     order = "g[space-garden]",
     place_result = "space-garden",
@@ -14,6 +13,6 @@ data:extend({
     pick_sound = item_sounds.fluid_inventory_pickup,
     drop_sound = item_sounds.fluid_inventory_move,
     stack_size = 10,
-    weight = 100 * kg
+    weight = 200 * kg
   }
 })
