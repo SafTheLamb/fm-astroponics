@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.2
-Date: ????
-  Changes:
+Date: 2025-04-23
+  Minor Features:
+    - Add Biomending, which can be used to refresh the spoiling timer for pentapod and biter eggs
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.1
 Date: 2025-04-14

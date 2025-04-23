@@ -11,7 +11,3 @@ if not mods["early-agriculture"] then
   data.raw.technology["tree-seeding"].enabled = false
   data.raw.technology["fish-breeding"].prerequisites = {"agricultural-science-pack"}
 end
-
-if mods["wood-industry"] then
-  ftech.add_prereq("astroponics", "kiln-smelting-2")
-end

@@ -22,6 +22,29 @@ data:extend({
       },
       time = 30
     }
+  },
+  {
+    type = "technology",
+    name = "biomending",
+    icon = "__astroponics__/graphics/technology/biomending.png",
+    icon_size = 256,
+    effects = {
+      {type="unlock-recipe", recipe="pentapod-egg-biomending"},
+      {type="unlock-recipe", recipe="biter-egg-biomending"},
+    },
+    prerequisites = {"biter-egg-handling", "production-science-pack"},
+    unit = {
+      count = 500,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"production-science-pack", 1},
+        {"space-science-pack", 1},
+        {"agricultural-science-pack", 1},
+      },
+      time = 60
+    }
   }
 })
 

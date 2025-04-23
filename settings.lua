@@ -1,5 +1,4 @@
 data:extend({
-  -- allow growing gleba crops in space
   {
     type = "bool-setting",
     name = "astroponics-gleba-crops",
@@ -7,7 +6,6 @@ data:extend({
     default_value = true,
     order = "a"
   },
-  -- turn excess bioslurry into crude oil
   {
     type = "bool-setting",
     name = "astroponics-crude-oil",
