@@ -2,6 +2,7 @@
 Version: 1.6.4
 Date: ????
   Changes:
+    - Fix biomending recipes changing recycling recipes
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.3
 Date: 2025-06-08

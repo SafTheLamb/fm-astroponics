@@ -43,6 +43,7 @@ for _,entry in pairs(mendable_agriculture_items) do
       unlock_results = false,
       allow_quality = false,
       result_is_always_fresh = true,
+      auto_recycle = false,
       ingredients = {
         {type="item", name=entry.name, amount=1, ignored_by_stats=1, ignored_by_productivity=1},
         {type="item", name="bioflux", amount=1},
