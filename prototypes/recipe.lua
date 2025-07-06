@@ -10,7 +10,7 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type="item", name="low-density-structure", amount=20},
-      glass_item and {type="item", name=glass_item, amount=100} or {type="item", name="concrete", amount=10},
+      glass_item and {type="item", name=glass_item, amount=80} or {type="item", name="concrete", amount=10},
       {type="item", name="processing-unit", amount=5},
       {type="item", name="pipe", amount=10},
       {type="item", name="landfill", amount=10}
@@ -23,7 +23,7 @@ data:extend({
     localised_name = {"recipe-name.liquid-fertilizer-chemical"},
     icon = "__astroponics__/graphics/icons/fluid/chemical-liquid-fertilizer.png",
     category = "chemistry-or-cryogenics",
-    subgroup = subgroup,
+    subgroup = "astroponic-processes",
     order = "e[astroponics]-a[chemical]",
     surface_conditions = not mods["Space-Age-Without-Platforms"] and {{property="magnetic-field", min=0, max=5}} or nil,
     energy_required = 2,
@@ -44,7 +44,7 @@ data:extend({
     name = "bioslurry-recycling",
     icon = "__astroponics__/graphics/icons/fluid/bioslurry-recycling.png",
     category = "chemistry-or-cryogenics",
-    subgroup = subgroup,
+    subgroup = "astroponic-processes",
     order = "e[astroponics]-b[recycling]",
     surface_conditions = {{property="magnetic-field", min=0, max=5}},
     energy_required = 2,
@@ -66,10 +66,10 @@ data:extend({
     localised_name = {"recipe-name.tree-astroponics"},
     icons = {
       {icon="__base__/graphics/icons/wood.png"},
-      {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+      {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3},
     },
     category = "astroponics",
-    subgroup = subgroup,
+    subgroup = "astroponic-processes",
     order = "b[agriculture]-a[wood]",
     energy_required = 12,
     enabled = false,
@@ -77,12 +77,12 @@ data:extend({
     allow_productivity = true,
     allow_decomposition = false,
     ingredients = {
-      {type="fluid", name="liquid-fertilizer", amount=50, ignored_by_stats=50},
+      {type="fluid", name="liquid-fertilizer", amount=50},
       {type="item", name="tree-seed", amount=1}
     },
     results = {
       {type="item", name="wood", amount=wood_amount},
-      {type="fluid", name="bioslurry", amount=25, ignored_by_stats=25}
+      {type="fluid", name="bioslurry", amount=25, ignored_by_productivity=25}
     },
     main_product = "wood"
   }
@@ -99,7 +99,7 @@ if settings.startup["astroponics-gleba-crops"].value then
         {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
-      subgroup = subgroup,
+      subgroup = "astroponic-processes",
       order = "d[xeno]-a[yumako]",
       energy_required = 18,
       enabled = false,
@@ -112,7 +112,7 @@ if settings.startup["astroponics-gleba-crops"].value then
       },
       results = {
         {type="item", name="yumako", amount=20},
-        {type="fluid", name="bioslurry", amount=40, ignored_by_stats=40}
+        {type="fluid", name="bioslurry", amount=40, ignored_by_productivity=40}
       },
       main_product = "yumako"
     },
@@ -125,20 +125,20 @@ if settings.startup["astroponics-gleba-crops"].value then
         {icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
       },
       category = "astroponics",
-      subgroup = subgroup,
+      subgroup = "astroponic-processes",
       order = "d[xeno]-b[jellynut]",
       energy_required = 18,
       enabled = false,
       auto_recycle = false,
       allow_productivity = true,
       ingredients = {
-        {type="fluid", name="liquid-fertilizer", amount=100, ignored_by_stats=100},
+        {type="fluid", name="liquid-fertilizer", amount=100},
         {type="item", name="calcite", amount=1},
         {type="item", name="jellynut-seed", amount=1}
       },
       results = {
         {type="item", name="jellynut", amount=20},
-        {type="fluid", name="bioslurry", amount=40, ignored_by_stats=40}
+        {type="fluid", name="bioslurry", amount=40, ignored_by_productivity=40}
       },
       main_product = "jellynut"
     }
