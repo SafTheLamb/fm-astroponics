@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.0
-Date: ????
+Date: 2025-07-06
   Changes:
     - Add astroponics category even if bioprocessing tab isn't installed
     - Tree seeding is no longer disabled/hidden (to avoid having to fixup technologies)
