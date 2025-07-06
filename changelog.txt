@@ -3,6 +3,8 @@ Version: 1.7.0
 Date: ????
   Changes:
     - Add astroponics category even if bioprocessing tab isn't installed
+    - Tree seeding is no longer disabled/hidden (to avoid having to fixup technologies)
+    - Tree seeding gives +50% wood processing productivity
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2025-06-08

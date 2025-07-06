@@ -7,7 +7,6 @@ ftech.remove_unlock("space-platform-thruster", "ice-melting")
 
 if not mods["early-agriculture"] then
   ftech.add_unlock("astroponics", "wood-processing")
-  data.raw.technology["tree-seeding"].hidden = true
-  data.raw.technology["tree-seeding"].enabled = false
-  data.raw.technology["fish-breeding"].prerequisites = {"agricultural-science-pack"}
+  ftech.remove_unlock("tree-seeding", "wood-processing")
+  table.insert(data.raw.technology["tree-seeding"].effects, {type="change-recipe-productivity", recipe="wood-processing", change=0.5})
 end
