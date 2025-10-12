@@ -25,7 +25,7 @@ data:extend({
     category = "chemistry-or-cryogenics",
     subgroup = "astroponic-processes",
     order = "e[astroponics]-a[chemical]",
-    surface_conditions = not mods["Space-Age-Without-Platforms"] and {{property="magnetic-field", min=0, max=5}} or nil,
+    surface_conditions = not mods["Space-Age-Without-Platforms"] and {{property="magnetic-field", min=0, max=99}} or nil,
     energy_required = 2,
     enabled = false,
     auto_recycle = false,

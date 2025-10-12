@@ -2,6 +2,7 @@
 Version: 1.7.2
 Date: ????
   Changes:
+    - Relax limitation on surfaces liquid fertilizer can be crafted on (anywhere but Cerys)
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2025-07-20
