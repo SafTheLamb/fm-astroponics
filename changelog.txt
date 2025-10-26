@@ -1,12 +1,8 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.7.4
-Date: ????
-  Changes:
----------------------------------------------------------------------------------------------------
 Version: 1.7.3
 Date: 2025-10-25
-  Changes:
-    - Fixed Flux and Coherence recipes for Liquid fertilizer missing (Voidcraft compatibility)
+  Compatibility:
+    - Voidcraft: Add fluxize and coherize recipe variants
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2025-10-12
