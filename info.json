@@ -11,7 +11,7 @@
   },
   "dependencies": [
     "base >= 2.0.7",
-    "fdsl >= 0.1.3",
+    "fdsl >= 0.2.3",
     "space-age",
     "? wood-industry >= 2.0.0",
     "? bztin",

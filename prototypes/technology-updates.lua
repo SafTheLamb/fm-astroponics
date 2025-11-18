@@ -8,7 +8,5 @@ ftech.remove_unlock("space-platform-thruster", "ice-melting")
 if not mods["early-agriculture"] then
   ftech.add_unlock("astroponics", "wood-processing")
   ftech.remove_unlock("tree-seeding", "wood-processing")
-  if data.raw.technology["tree-seeding"] and data.raw.technology["tree-seeding"].effects then
-    table.insert(data.raw.technology["tree-seeding"].effects, {type="change-recipe-productivity", recipe="wood-processing", change=0.5})
-  end
+  ftech.add_effect("tree-seeding", {type="change-recipe-productivity", recipe="wood-processing", change=0.5})
 end
