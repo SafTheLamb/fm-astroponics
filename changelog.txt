@@ -5,6 +5,8 @@ Date: ????
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.4
 Date: 2025-11-18
+  Minor Features:
+    - Add setting for crafting speed
   Bugfixes:
     - Fix load error if tree-seeding technology does not exist
 ---------------------------------------------------------------------------------------------------
