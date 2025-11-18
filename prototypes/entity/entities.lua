@@ -57,7 +57,7 @@ data:extend({
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     surface_conditions = surface_conditions,
     crafting_categories = {"astroponics"},
-    crafting_speed = 1,
+    crafting_speed = settings.startup["astroponics-garden-speed"].value,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

@@ -12,5 +12,13 @@ data:extend({
     setting_type = "startup",
     default_value = true,
     order = "b"
+  },
+  {
+    type = "double-setting",
+    name = "astroponics-garden-speed",
+    setting_type = "startup",
+    default_value = 1,
+    minimum_value = 0.01,
+    order = "c"
   }
 })
