@@ -2,6 +2,7 @@
 Version: 1.7.5
 Date: ????
   Changes:
+    - Add Astroponics as a prerequisite for Gleba astroponics, which comes into play with Any Planet Start on Gleba.
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.4
 Date: 2025-11-18

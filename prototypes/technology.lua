@@ -62,7 +62,7 @@ if settings.startup["astroponics-gleba-crops"].value then
         {type="unlock-recipe", recipe="yumako-astroponics"},
         {type="unlock-recipe", recipe="jellynut-astroponics"}
       },
-      prerequisites = {"advanced-asteroid-processing"},
+      prerequisites = {"advanced-asteroid-processing", "astroponics"},
       unit = {
         count = 2000,
         ingredients = {
