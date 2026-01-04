@@ -1,4 +1,4 @@
-local wood_amount = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value and 10 or 4
+local more_wood = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value or settings.startup["astroponics-more-wood"].value
 local glass_item = (mods["aai-industry"] or (mods["crushing-industry"] and settings.startup["crushing-industry-glass"].value)) and "glass" or nil
 local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
 
@@ -81,7 +81,7 @@ data:extend({
       {type="item", name="tree-seed", amount=1}
     },
     results = {
-      {type="item", name="wood", amount=wood_amount},
+      {type="item", name="wood", amount=more_wood and 10 or 4},
       {type="fluid", name="bioslurry", amount=25, ignored_by_productivity=25}
     },
     main_product = "wood"

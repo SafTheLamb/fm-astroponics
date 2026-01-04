@@ -22,3 +22,15 @@ data:extend({
     order = "c"
   }
 })
+
+if not mods["early-agriculture"] then
+  data:extend({
+    {
+      type = "bool-setting",
+      name = "astroponics-more-wood",
+      setting_type = "startup",
+      default_value = true,
+      order = "A"
+    }
+  })
+end
