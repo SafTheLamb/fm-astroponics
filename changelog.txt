@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.8.0
-Date: ????
+Date: 2026-01-04
   Features:
     - New setting when Early Agriculture is not installed: "More wood" buffs Tree astroponics yields from 4 to 10 wood.
 ---------------------------------------------------------------------------------------------------
