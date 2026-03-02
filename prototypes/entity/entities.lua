@@ -152,6 +152,16 @@ data:extend({
       fade_in_ticks = 12,
       fade_out_ticks = 30
     },
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation = 19, main_offset = util.by_pixel( 58.75,  58.625), shadow_offset = util.by_pixel( 58.75,  58.625), show_shadow = false },
+        { variation = 19, main_offset = util.by_pixel( 58.75,  58.625), shadow_offset = util.by_pixel( 58.75,  58.625), show_shadow = false },
+        { variation = 19, main_offset = util.by_pixel( 58.75,  58.625), shadow_offset = util.by_pixel( 58.75,  58.625), show_shadow = false },
+        { variation = 19, main_offset = util.by_pixel( 58.75,  58.625), shadow_offset = util.by_pixel( 58.75,  58.625), show_shadow = false },
+      }
+    ),
+    circuit_wire_max_distance = 9,
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close
