@@ -1,3 +1,5 @@
+local ficon = require("__fdsl__.lib.icon")
+
 local more_wood = mods["early-agriculture"] and settings.startup["early-agriculture-buff-tree-plant"].value or settings.startup["astroponics-more-wood"].value
 local glass_item = (mods["aai-industry"] or (mods["crushing-industry"] and settings.startup["crushing-industry-glass"].value)) and "glass" or nil
 local subgroup = mods["bioprocessing-tab"] and "astroponic-processes" or "fluid-recipes"
@@ -111,7 +113,7 @@ if settings.startup["astroponics-gleba-crops"].value then
 				{type="item", name="yumako-seed", amount=1}
 			},
 			results = {
-				{type="item", name="yumako", amount=20},
+				{type="item", name="yumako", amount=settings.startup["astroponics-more-gleba"].value and 40 or 20},
 				{type="fluid", name="bioslurry", amount=40, ignored_by_productivity=40}
 			},
 			main_product = "yumako"
@@ -122,7 +124,7 @@ if settings.startup["astroponics-gleba-crops"].value then
 			localised_name = {"recipe-name.jellynut-astroponics"},
 			icons = {
 				{icon="__space-age__/graphics/icons/jellynut.png"},
-				{icon="__astroponics__/graphics/icons/fluid/liquid-fertilizer.png", shift={-8,-8}, scale=0.3}
+				ficon.make_corner_icon("fluid", "liquid-fertilizer", ficon.alignment.top_left, 0.3)
 			},
 			categories = {"astroponics"},
 			subgroup = "astroponic-processes",
@@ -137,7 +139,7 @@ if settings.startup["astroponics-gleba-crops"].value then
 				{type="item", name="jellynut-seed", amount=1}
 			},
 			results = {
-				{type="item", name="jellynut", amount=20},
+				{type="item", name="jellynut", amount=settings.startup["astroponics-more-gleba"].value and 40 or 20},
 				{type="fluid", name="bioslurry", amount=40, ignored_by_productivity=40}
 			},
 			main_product = "jellynut"

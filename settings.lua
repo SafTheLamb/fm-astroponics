@@ -4,7 +4,14 @@ data:extend({
     name = "astroponics-gleba-crops",
     setting_type = "startup",
     default_value = true,
-    order = "a"
+    order = "a[gleba]-a[yes]"
+  },
+  {
+    type = "bool-setting",
+    name = "astroponics-more-gleba",
+    setting_type = "startup",
+    default_value = false,
+    order = "a[gleba]-b[more]"
   },
   {
     type = "bool-setting",

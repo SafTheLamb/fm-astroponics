@@ -9,6 +9,7 @@ require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.biomending")
 require("prototypes.technology")
+require("prototypes.proxy-sprites")
 
 require("base-data-updates")
 
