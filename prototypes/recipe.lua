@@ -48,7 +48,7 @@ data:extend({
 		categories = {"chemistry", "cryogenics"},
 		subgroup = "astroponic-processes",
 		order = "e[astroponics]-b[recycling]",
-		surface_conditions = {{property="magnetic-field", min=0, max=5}},
+		surface_conditions = {{property="magnetic-field", min=0, max=99}},
 		energy_required = 2,
 		enabled = false,
 		auto_recycle = false,
